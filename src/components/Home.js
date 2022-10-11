@@ -10,8 +10,10 @@ const Home = () => {
             <div className='d-flex justify-content-between pt-4'>
             <h3>Hey! Welcome to our quiz quiz game. You can increase your knowledge by answering these questions.</h3>
             <img className='img-fluid' src={lq} alt="header" />
+            </div> <br /> <br />
+            <div className='row'>
+                {courses.map(course=><Course key={course.id} data={course}></Course>)}
             </div>
-            <div>{courses.map(course=><Course key={course.id} data={course}></Course>)}</div>
         </div>
     );
 };

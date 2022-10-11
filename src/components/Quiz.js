@@ -10,9 +10,12 @@ const Quiz = () => {
         <div>
             <h2>Quiz of {name}</h2>
             <div>
+                <ol>
                 {
                     questions.map(question => <QuizDetails key={question.id} data={question}></QuizDetails>)
                 }
+                </ol>
+                
             </div>
         </div>
     );
