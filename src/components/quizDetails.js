@@ -1,6 +1,6 @@
 import React from 'react';
-import { BsEyeSlash } from 'react-icons/bs';
 import Option from './Option';
+import Toast from './Toast';
 const QuizDetails = (props) => {
     console.log(props);
     const {question, id, options, correctAnswer}=props.data;
@@ -17,15 +17,13 @@ const QuizDetails = (props) => {
             <li>
             <div className='d-flex justify-content-between'>
                 <p>{newQuestion}</p>
-                <p onClick={() => {alert(correctAnswer)}}> <BsEyeSlash /></p>
+                <div><Toast data={correctAnswer}></Toast></div>
             </div>
-            <br />
             <div>  
                {
                 options.map(option => <Option data={[id,option,correctAnswer]} />)
                }
             </div>
-            <br />
             <br />
             </li>
         </div>

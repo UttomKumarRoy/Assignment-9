@@ -11,7 +11,7 @@ const Header = () => {
             <Link to="/">Home</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/statistics">Statistics</Link>
-            {/*<Link to="/quiz/:id">Quiz</Link> */}
+            {/*<Link to="/quiz/:id">Quiz</Link>*/}
             </div>
             
 
