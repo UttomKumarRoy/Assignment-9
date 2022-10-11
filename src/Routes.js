@@ -34,12 +34,6 @@ export const router = createBrowserRouter([
         element: <Quiz />,
         loader: ({params}) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
       },
-    //  {
-    //    path: '/:id',
-    //    element: <BookDetails />,
-    //    loader: ({ params }) =>
-    //      fetch(`https://api.itbook.store/1.0/books/${params.id}`),
-    //  },
     ],
   },
 ])

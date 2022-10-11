@@ -1,6 +1,7 @@
 import React from 'react';
 
-const quizDetails = () => {
+const QuizDetails = (props) => {
+    console.log(props);
     return (
         <div>
             I am quiz details
@@ -8,4 +9,4 @@ const quizDetails = () => {
     );
 };
 
-export default quizDetails;
+export default QuizDetails;
