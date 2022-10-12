@@ -5,13 +5,12 @@ const Header = () => {
     return (
         <div className='d-flex justify-content-between align-items-center'>
             <div>
-                <h1>Quiz Quiz Game</h1>
+                <h1 className='text-primary'>Quiz Quiz Game</h1>
             </div>
             <div className='d-flex gap-5'>
-            <Link to="/">Home</Link>
-            <Link to="/blog">Blog</Link>
-            <Link to="/statistics">Statistics</Link>
-            {/*<Link to="/quiz/:id">Quiz</Link>*/}
+            <Link className='text-decoration-none' to="/">Home</Link>
+            <Link className='text-decoration-none' to="/blog">Blog</Link>
+            <Link className='text-decoration-none' to="/statistics">Statistics</Link>
             </div>
             
 

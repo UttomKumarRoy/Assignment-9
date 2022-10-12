@@ -7,8 +7,8 @@ const Quiz = () => {
     const quiz=loaderData.data;
     const {name, questions}=quiz
     return (
-        <div>
-            <h2>Quiz of {name}</h2>
+        <div> <br />
+            <h2 className='text-center text-white bg-secondary rounded-5 p-3'>Quiz of {name}</h2> <br /> <br />
             <div>
                 <ol>
                 {

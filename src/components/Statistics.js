@@ -22,12 +22,15 @@ const Statistics = () => {
     ];
     return (
         <div>
-            <LineChart width={500} height={400} data={data}>
-                <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip></Tooltip>
-            </LineChart>
+    
+                <LineChart width={500} height={400} data={data}>
+                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                    <XAxis dataKey="name" />
+                    <YAxis />
+                    <Tooltip></Tooltip>
+                </LineChart>
+        
+           
         </div>
     );
 };
