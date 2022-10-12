@@ -1,28 +1,16 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import { LineChart, Line, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
+   const loaderData=useLoaderData().data;
+   const data = [];
    
    
+   
+   loaderData.map(subject=>{ return data.push({name:subject.name,total:subject.total})})
 
-    const data = [
-        {
-            name: "React",
-            total: 8
-        },
-        {
-            name: "JavaScript",
-            total: 9
-        },
-        {
-            name: "CSS",
-            total: 8
-        },
-        {
-            name: "Git",
-            total: 11
-        }
-    ];
+    
 
     return (
         <div> <br />
