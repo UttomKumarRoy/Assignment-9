@@ -11,7 +11,7 @@ const Course = (props) => {
                 <div className="card-body">
                         <h5 className="card-title">{name}</h5>
                         <p className="card-text">Total Quiz:{total}</p>
-                        <Link to={`../quiz/${id}`} className="btn btn-primary">Start Practice</Link>
+                        <Link to={`../quiz/${id}`} className="btn btn-primary">Start Quiz</Link>
                 </div> 
             </div>
             <br /> <br />

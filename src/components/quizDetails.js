@@ -2,7 +2,6 @@ import React from 'react';
 import Option from './Option';
 import Toast from './Toast';
 const QuizDetails = (props) => {
-    console.log(props);
     const {question, id, options, correctAnswer}=props.data;
     function removeTags(str){
         if((str===null) || (str===''))
@@ -21,7 +20,7 @@ const QuizDetails = (props) => {
             </div>
             <div>  
                {
-                options.map(option => <Option data={[id,option,correctAnswer]} />)
+                options.map((option, index) => <Option key={index} data={[id,option,correctAnswer]} />)
                }
             </div>
             <br />
