@@ -6,11 +6,7 @@ const Statistics = () => {
    const loaderData=useLoaderData().data;
    const data = [];
    
-   
-   
    loaderData.map(subject=>{ return data.push({name:subject.name,total:subject.total})})
-
-    
 
     return (
         <div> <br />
