@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <div> <br /> <br />
             <div style={{width:"100vw", height:"10vh"}}>
-            <h3 className='bgImg text-white text-center pt-4'>Hey! Welcome to our quiz quiz game.</h3>
+            <h3 className='bgImg text-primary text-center text-bold pt-4'> Hey! Welcome to our quiz quiz game.</h3>
             </div> <br /> <br /> <br /> <br />
             <div className='row'>
                 {courses.map(course=><Course key={course.id} data={course}></Course>)}

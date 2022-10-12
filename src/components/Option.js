@@ -6,7 +6,6 @@ const Option = (props) => {
         <div>
             
             <label   className='radio' >  <input  onClick={() => option===correctAnswer?alert('Right Answer'):alert('Wrong Answer')} type="radio"  name={id} /> {option}</label>
-            
             <br/> 
         </div>
     );

@@ -7,13 +7,11 @@ const Header = () => {
             <div>
                 <h1 className='text-primary'>Quiz Quiz Game</h1>
             </div>
-            <div className='d-flex gap-5'>
+            <div className='d-flex gap-3'>
             <Link className='text-decoration-none' to="/">Home</Link>
-            <Link className='text-decoration-none' to="/blog">Blog</Link>
             <Link className='text-decoration-none' to="/statistics">Statistics</Link>
+            <Link className='text-decoration-none' to="/blog">Blog</Link>
             </div>
-            
-
         </div>
     );
 };
